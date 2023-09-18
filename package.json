@@ -1,0 +1,42 @@
+{
+    "name": "transform-x",
+    "description": "",
+    "version": "0.0.1",
+    "main": "dist/lib-node.js",
+    "module": "dist/lib-esm.js",
+    "bin": {
+        "json_to_excel": "dist/cli-node.cjs",
+        "excel_to_json": "dist/cli-node.cjs",
+        "json_to_sqlite": "dist/cli-node.cjs",
+        "sqlite_to_json": "dist/cli-node.cjs",
+        "sqlite_to_excel": "dist/cli-node.cjs",
+        "excel_to_sqlite": "dist/cli-node.cjs"
+    },
+    "scripts": {
+        "prepare": "./sh/esbuild-all.sh"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.6.2",
+        "@types/jest": "^29.5.3",
+        "jest": "^29.6.2",
+        "esbuild": "^0.18.17"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "minimist": "^1.2.8",
+        "xlsx": "^0.18.5",
+        "zod": "^3.21.4"
+    },
+    "license": "MIT",
+    "author": "Enzo",
+    "keywords": [
+        "SQLite",
+        "Excel",
+        "XLSX"
+    ],
+    "homepage": "https://github.com/emadda/transform-x.git",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/emadda/transform-x.git"
+    }
+}

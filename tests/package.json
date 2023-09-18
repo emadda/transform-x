@@ -1,0 +1,5 @@
+{
+    "name": "transform-x-tests",
+    "description": "Package JSON used to change type=commonjs. `node --test` will read this and interpret `require` imports correctly, instead of ignoring them (as it does when type=module is used in the root package.json).",
+    "type": "commonjs"
+}

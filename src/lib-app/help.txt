@@ -1,0 +1,33 @@
+transform-x
+
+A CLI to convert between JSON, SQLite and Excel formats.
+
+https://github.com/emadda/transform-x
+
+Commands and flags
+
+    json_to_excel
+    excel_to_json
+
+    json_to_sqlite
+    sqlite_to_json
+
+    sqlite_to_excel
+    excel_to_sqlite
+
+        --i
+            Input file.
+            Tries to read from stdin if missing.
+
+        --o
+            Output file.
+            Outputs to stdout if missing.
+
+        --config
+            JSON file for options.
+
+        --open
+            Open the output file with the associated program.
+
+    help
+    version

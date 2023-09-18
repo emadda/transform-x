@@ -23,7 +23,11 @@ import {json_to_excel, sqlite_to_json} from "transform-x";
 import {json_to_excel, sqlite_to_json} from "transform-x/src/lib";
 ```
 
+See [tests](./tests) directory for function usage examples.
 
+## Web UI
+
+You can convert between formats in your browser at [transform-x.dev](https://transform-x.dev).
 
 ## CLI's
 

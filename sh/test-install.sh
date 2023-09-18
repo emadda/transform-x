@@ -3,6 +3,9 @@
 # Remove prev run.
 npm uninstall -g transform-x
 
+rm -f ./../dist || true
+rm -f /tmp/transform-x-0.0.1.tgz || true
+
 npm pack --pack-destination /tmp
 
 # Note:

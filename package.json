@@ -1,7 +1,7 @@
 {
     "name": "transform-x",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "dist/lib-node.js",
     "module": "dist/lib-esm.js",
     "bin": {

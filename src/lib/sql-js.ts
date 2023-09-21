@@ -1,4 +1,4 @@
-import initSqlJs from './../vendor/sql-js-build/out/sql-wasm';
+import initSqlJs from './../vendor/sql-js-build/out/sql-wasm-edited';
 import {log_json} from "./util.ts";
 
 
@@ -34,7 +34,7 @@ const exec_read = (db, sql, params) => {
     const res = db.exec(sql, params);
 
     // When: No rows, but table exists.
-    if(res.length === 0) {
+    if (res.length === 0) {
         return [];
     }
 

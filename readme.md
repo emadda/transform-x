@@ -2,8 +2,16 @@
 
 JS functions to convert between JSON, SQLite and Excel. 
 
-- Use via a JS import or CLI.
-- Portable: Aims to work in any web standards compatible JS runtime (browser, Node.js, Deno, Bun, Cloudflare Workers).
+Use via:
+
+- [JS library](#use-as-a-js-library)
+- [CLI](#clis)
+- [Web UI](https://transform-x.dev)
+- [HTTP API](https://api.transform-x.dev)
+
+
+Portable: Aims to work in any web standards compatible JS runtime (browser, Node.js, Deno, Bun, Cloudflare Workers).
+
 
 ## Use as a JS library
 

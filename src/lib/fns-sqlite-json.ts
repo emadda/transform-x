@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-import initSqlJs from './../vendor/sql.js/dist/sql-wasm';
+// import initSqlJs from './../vendor/sql.js/dist/sql-wasm';
 import {exec_read, exec_write, get_sql_js} from "./sql-js.ts";
 import {log_json} from "./util.ts";
 
@@ -10,6 +10,7 @@ import {log_json} from "./util.ts";
 
 const sqlite_to_json = async (opts) => {
     const {
+        // Must be uint8array, not arraybuffer.
         sqlite_bytes
     } = opts;
 

@@ -25,6 +25,18 @@
 
 
 
+- Cloudflare Workers.
+	- Some edits to the emscripted JS/WASM code were needed.
+		- See comment on `sql-wasm-edited.js`
+		- Diff the `edited` with `original` to see changes.
+	- Steps.
+		- 1. Extract the WASM binary from base64 embedded string into .wasm file, place into CF worker by importing the .wasm file.
+		- 2. Replace `{credentials: "same-origin"}` to avoid `Error: The 'credentials' field on 'RequestInitializerDict' is not implemented.`
+			- This is a bug in the CF runtime.
+		- 3. Avoid `WebAssembly.instantiate(wasm_binary)` as this is not allowed on CF workers as it is a form of code generation.
+			- Use `WebAssembly.instantiate(wasm_module)`, where the `wasm_module` comes from `import wasm_module from "wasm_binary.wasm"` in the CF worker.
+
+
 ## Build issues
 
 - `.devcontainer` does not work on Mac M1 (linux/arm64).
